@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us – JPJ Road Safety Campaign</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #fad31f 20%, #234ca2 70%);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .contact-form-container {
+      background: #fffbea;
+      padding: 2.5em 2em 2em 2em;
+      max-width: 440px;
+      margin: 60px auto;
+      border-radius: 16px;
+      box-shadow: 0 10px 28px rgba(35, 76, 162, 0.12), 0 2px 4px rgba(250, 211, 31, 0.09);
+      text-align: center;
+      border: 2px solid #234ca2;
+    }
+    .logo-space {
+      margin-bottom: 20px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-space img {
+        
+
+      max-height: 100px;
+      width: auto;
+    }
+    .contact-form-container h2 {
+      color: #234ca2;
+      margin-bottom: 18px;
+    }
+    label {
+      display: block;
+      margin-top: 16px;
+      margin-bottom: 6px;
+      font-size: 1rem;
+      color: #967500;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 11px;
+      border: 1.5px solid #faeaaf;
+      border-radius: 6px;
+      background: #fffbe5;
+      font-size: 1rem;
+      margin-bottom: 12px;
+      transition: border-color 0.2s;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: #fad31f;
+      outline: none;
+    }
+    button {
+      background: linear-gradient(90deg, #fad31f 10%, #234ca2 100%);
+      color: #fff;
+      border: none;
+      padding: 13px 0;
+      width: 100%;
+      font-size: 1.07rem;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 1px 4px rgba(35, 76, 162, 0.11);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-top: 10px;
+      transition:  0.2s, box-shadow 0.2s;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #141caa 0.5px,20% #0f45a8 100%);
+      box-shadow: 0 2px 12px rgba(35, 76, 162, 0.09);
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-form-container">
+    <div class="logo-space">
+        <img src="jpj-logo.png" alt="JPJ Logo">
+    </div>
+    <h2>Contact Us</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject" required>
+        <option value="">-- Select a subject --</option>
+        <option value="feedback">Content on Road Safety Campaign</option>
+        <option value="incident">Report a Road Safety Incident</option>
+        <option value="volunteer">Volunteer/Participate in Campaign</option>
+        <option value="suggestion">suggestion a Road Safety Initiative</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Tell us about your experience, concerns, or suggestions for safer roads."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
