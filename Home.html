@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JPJ Road Safety Campaign Infographic</title>
+    <style>
+        /* Reset & base */
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: #f7f7fa;
+            color: #14216a;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 30px 15px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+            padding: 40px 30px 50px;
+        }
+        /* Logo */
+        .logo {
+            display: block;
+            margin: 0 auto 25px auto;
+            width: 140px;
+            height: auto;
+        }
+        /* Title & slogan */
+        .title {
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 6px;
+            color: #14216a;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #3b45b2;
+            margin-bottom: 25px;
+        }
+        .slogan {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #e60000;
+            background: #ffe600;
+            padding: 14px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px #ffe60088;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+        /* Highlight banner */
+        .highlight {
+            background: #ffe600;
+            color: #14216a;
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-align: center;
+            padding: 14px 0;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 3px 12px #ffe600aa;
+            user-select: none;
+        }
+        /* Infographic cards container */
+        .infographic-row {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        /* Each card */
+        .card {
+            background: #14216a;
+            color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 18px #00000066;
+            display: flex;
+            gap: 25px;
+            padding: 25px 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        /* Icon circle */
+        .card-icon {
+            flex-shrink: 0;
+            background: #ffe600;
+            color: #14216a;
+            font-size: 2.8rem;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 10px #ffe600cc;
+            user-select: none;
+        }
+        /* Text and image wrapper */
+        .card-content {
+            flex: 1 1 400px;
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        /* Text block */
+        .card-text {
+            flex: 1 1 250px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffe600;
+            margin-bottom: 18px;
+            user-select: text;
+        }
+        .card-text ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        .card-text ul li {
+            margin-bottom: 10px;
+        }
+        /* Image placeholder or actual image */
+        .card-image {
+            flex: 1 1 130px;
+            min-width: 130px;
+            height: 130px;
+            border-radius: 15px;
+            background: #ffe60033;
+            border: 2px dashed #ffe600aa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #14216a;
+            font-weight: 700;
+            font-size: 0.95rem;
+            user-select: none;
+            text-align: center;
+            padding: 10px;
+        }
+        /* Responsive */
+        @media (max-width: 720px) {
+            .card {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .card-image {
+                width: 100%;
+                height: 180px;
+                min-width: auto;
+            }
+            .card-text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- JPJ Logo -->
+        <img src="jpj-logo.png" alt="JPJ Logo" class="logo" />
+
+        <!-- Title and subtitle -->
+        <h1 class="title">JPJ ROAD SAFETY CAMPAIGN</h1>
+        <h2 class="subtitle">TOGETHER FOR A SAFER MALAYSIA</h2>
+
+        <!-- Slogan -->
+        <div class="slogan">Drive Safe, Arrive Safe – Your Life, Your Responsibility</div>
+
+        <!-- Highlight -->
+        <div class="highlight">🚦 Together for a Safer Malaysia</div>
+
+        <!-- Infographic cards -->
+        <div class="infographic-row">
+
+            <!-- Campaign Objectives -->
+            <div class="card">
+                <div class="card-icon" aria-label="Target icon">🎯</div>
+                <div class="card-content">
+                    <div class="card-text">
+                        <h3 class="card-title">Campaign Objectives</h3>
+                        <ul>
+                            <li>Reduce road accidents and fatalities</li>
+                            <li>Raise public awareness on road safety</li>
+                            <li>Educate all road users on traffic laws</li>
+                            <li>Strengthen enforcement of safety rules</li>
+                        </ul>
+                    </div>
+                    <img src="campaign.jpg" alt="Campaign Objectives" class="card-image" 
+                    style="border:none; background:none; padding:0; height:auto; width: 300px;px; border: radius 20px;px;" />
+
+                </div>
+            </div>
+
+            <!-- Key Initiatives -->
+            <div class="card">
+                <div class="card-icon" aria-label="Shield icon">🛡</div>
+                <div class="card-content">
+                    <div class="card-text">
+                        <h3 class="card-title">Key Initiatives</h3>
+                        <ul>
+                            <li>Road safety workshops & seminars</li>
+                            <li>School & university outreach</li>
+                            <li>Media campaigns & PSAs</li>
+                            <li>Community & enforcement partnerships</li>
+                        </ul>
+                    </div>
+                    <img src="initiatives.jpg" alt="Campaign Objectives" class="card-image" 
+                    style="border:none; background:none; padding:0; height:auto; width:300px;px; border-radius:20px;" />
+
+                </div>
+            </div>
+
+            <!-- Did You Know -->
+            <div class="card">
+                <div class="card-icon" aria-label="Chart icon">📊</div>
+                <div class="card-content">
+                    <div class="card-text">
+                        <h3 class="card-title">Did You Know?</h3>
+                        <ul>
+                            <li>Over 6,000 road fatalities yearly in Malaysia</li>
+                            <li>Most accidents involve young drivers</li>
+                            <li>Seatbelts & helmets save thousands of lives</li>
+                            <li>Your actions make a difference!</li>
+                        </ul>
+                    </div>
+                    <img src="Road-accident.jpg" alt="Campaign Objectives" class="card-image" 
+                    style="border:none; background:none; padding:0; height:auto; width: 300px;px; border-radius:20px;" />
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
