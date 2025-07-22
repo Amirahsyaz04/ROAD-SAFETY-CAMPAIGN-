@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JPJ ROAD SAFETY CAMPAIGN</title>
+  <link rel="stylesheet" href="Campaign jpj css.css">
+</head>
+<body>
+
+  <header>
+    <img src="jpj-logo.png" alt="JPJ Logo" class="logo">
+    
+    <h1>ROAD SAFETY CAMPAIGN</h1>
+    <nav>
+      <a href="Home.html">Home</a>
+      <a href="Campaign jpj.html" >Campaign</a>
+      <a href="content.html" >Content</a>
+      <a href="Campaign gallery.html" >Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="Campaign. about me.html">About Me</a>
+    </nav>
+  </header>
+  <section class="activities">
+    <h2>JPJ Activities</h2>
+    <div class="circle-container">
+      <div class="circle" onclick="showActivity('ops')">
+        <p>OPS Selamat</p>
+      </div>
+      <div class="circle" onclick="showActivity('booth')">
+        <p>JPJ Booths</p>
+      </div>
+      <div class="circle" onclick="showActivity('school')">
+        <p>School Roadshow</p>
+      </div>
+    </div>
+    
+    <div id="ops" class="activity-content">
+      <h3>OPS Selamat</h3>
+      <p>This campaign runs during festive seasons to enforce traffic laws and ensure safe travel for all Malaysians.</p>
+      <video controls width="500">
+        <source src="BERITA OPS SELAMAT.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <a href="OPS LINK.html" class="button">Learn More</a>
+    </div>
+
+    <div id="booth" class="activity-content">
+      <h3>JPJ Booths</h3>
+      <p>Set up at major events to provide info on road rules, conduct demos, and offer free vehicle inspections.</p>
+      <video controls width="300">
+        <source src="booth jpj.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+      <a href="JPJ BOOTH LINK.html" class="button">Learn More</a>
+    </div>
+
+    <div id="school" class="activity-content">
+      <h3>School Roadshow</h3>
+      <p>Educating school children and teens on road signs, traffic laws, and safety tips through interactive sessions.</p>
+      <video controls width="300">
+        <source src="school roadshow.1.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+      <a href="SCHOOL ROADSHOW JPJ.html" class="button">Learn More</a>
+    </div>
+  </section>
+
+  <script>
+    function showActivity(id) {
+      const sections = document.querySelectorAll('.activity-content');
+      sections.forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+
+    // Hide all content initially
+    window.onload = () => {
+      showActivity('ops'); // Show Ops Selamat by default
+    }
+  </script>
+
+</body>
+</html>
